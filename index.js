@@ -66,7 +66,7 @@ inquirer
     console.log(answers)
 
     //creat readme file
-    fs.writeFile("readme_render.md", generateMarkdown(answers) , function(err) {
+    fs.writeFile("README.md", generateMarkdown(answers) , function(err) {
       
       // Catch errors with the writeFile if there are any
       if (err) {
