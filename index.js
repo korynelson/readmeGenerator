@@ -15,47 +15,47 @@ inquirer
     name: "description",
     message: "Enter a project description?"
     },
-    // {
-    // type: "input",
-    // name: "install instructions",
-    // message: "Enter installation instructions."
-    // },
-    // {
-    // type: "input",
-    // name: "usage",
-    // message: "Enter usage information or usage examples."
-    // },
-    // {
-    // type: "input",
-    // name: "guidelines",
-    // message: "Enter any contribution guidelines"
-    // },
-    // {
-    // type: "input",
-    // name: "test",
-    // message: "Enter test instructions"
-    // },
-    // {
-    // type: "list",
-    // name: "license",
-    // message: "What license would you like to use",
-    // choices: [
-    //     "HTML", 
-    //     "CSS", 
-    //     "JavaScript", 
-    //     "MySQL"
-    //   ]
-    // },
+    {
+    type: "input",
+    name: "install instructions",
+    message: "Enter installation instructions."
+    },
+    {
+    type: "input",
+    name: "usage",
+    message: "Enter usage information or usage examples."
+    },
+    {
+    type: "input",
+    name: "guidelines",
+    message: "Enter any contribution guidelines"
+    },
+    {
+    type: "input",
+    name: "test",
+    message: "Enter test instructions"
+    },
+    {
+    type: "list",
+    name: "license",
+    message: "What license would you like to use",
+    choices: [
+        "MIT", 
+        "Apache 2.0", 
+        "BSD (Berkeley Software Distribution)", 
+        "GPLv3 (General Public License, version 3)"
+      ]
+    },
     {
     type: "input",
     name: "name",
     message: "What is your github name?"
     },
-    // {
-    // type: "input",
-    // name: "email",
-    // message: "What is your email?"
-    // },
+    {
+    type: "input",
+    name: "email",
+    message: "What is your email?"
+    },
     
   ])
   .then(answers => {

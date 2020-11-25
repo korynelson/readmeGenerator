@@ -1,7 +1,8 @@
 
-# REAME.md Generator
-## korynelson
-## This is a project for class
+# adsfads
+## afds
+## Description
+fasdf
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -15,4 +16,12 @@
 ## Credits
 
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Contributing
+
+##Tests
+
+## Questions
+
 
