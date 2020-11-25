@@ -7,7 +7,7 @@ function generateMarkdown(data) {
 
     ## Description
     ${data.description}
-
+`
   }
   
   module.exports = generateMarkdown;
