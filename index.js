@@ -5,16 +5,23 @@ const generateMarkdown = require("./utils/generateMarkdown")
 inquirer
   .prompt([
     /* Pass your questions in here */
-    // {
-    // type: "input",
-    // name: "title",
-    // message: "What is your project's title?"
-    // },
-    // {
-    // type: "input",
-    // name: "description",
-    // message: "Enter a project description?"
-    // },
+
+    // Github name is used as title
+    {
+      type: "input",
+      name: "name",
+      message: "What is your github name?"
+      },
+    {
+    type: "input",
+    name: "title",
+    message: "What is your project's title?"
+    },
+    {
+    type: "input",
+    name: "description",
+    message: "Enter a project description?"
+    },
     // {
     // type: "input",
     // name: "install instructions",
@@ -46,11 +53,7 @@ inquirer
     //     "MySQL"
     //   ]
     // },
-    {
-    type: "input",
-    name: "name",
-    message: "What is your github name?"
-    },
+
     // {
     // type: "input",
     // name: "email",
