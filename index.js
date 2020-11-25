@@ -5,23 +5,16 @@ const generateMarkdown = require("./utils/generateMarkdown")
 inquirer
   .prompt([
     /* Pass your questions in here */
-
-    // Github name is used as title
-    {
-      type: "input",
-      name: "name",
-      message: "What is your github name?"
-      },
     {
     type: "input",
     name: "title",
     message: "What is your project's title?"
     },
-    {
-    type: "input",
-    name: "description",
-    message: "Enter a project description?"
-    },
+    // {
+    // type: "input",
+    // name: "description",
+    // message: "Enter a project description?"
+    // },
     // {
     // type: "input",
     // name: "install instructions",
@@ -53,7 +46,11 @@ inquirer
     //     "MySQL"
     //   ]
     // },
-
+    {
+    type: "input",
+    name: "name",
+    message: "What is your github name?"
+    },
     // {
     // type: "input",
     // name: "email",
@@ -66,7 +63,7 @@ inquirer
     console.log(answers)
 
     //creat readme file
-    fs.writeFile("README.md", generateMarkdown(answers) , function(err) {
+    fs.writeFile("readme_render.md", generateMarkdown(answers) , function(err) {
       
       // Catch errors with the writeFile if there are any
       if (err) {
