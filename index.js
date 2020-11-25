@@ -10,11 +10,11 @@ inquirer
     name: "title",
     message: "What is your project's title?"
     },
-    // {
-    // type: "input",
-    // name: "description",
-    // message: "Enter a project description?"
-    // },
+    {
+    type: "input",
+    name: "description",
+    message: "Enter a project description?"
+    },
     // {
     // type: "input",
     // name: "install instructions",
