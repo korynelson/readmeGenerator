@@ -24,7 +24,8 @@ function generateMarkdown(data) {
     
 return `
 # ${data.title}
-## ${data.name}
+${license}
+
 ## Description
 ${data.description}
 
@@ -32,20 +33,28 @@ ${data.description}
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
+${data.installation}
 
 ## Usage
+${data.usage}
 
-## Credits
-
-## License ${license}
+## License
+This repository is licensed under the ${data.license} license
 
 ## Contributing
+${data.guidelines}
 
 ##Tests
+${data.test}
 
 ## Questions
+For any questions about this repository send an email to ${data.email}
+View my full GitHub at [https://github.com/${data.name}](https://github.com/${data.name})
 
 
 `;
