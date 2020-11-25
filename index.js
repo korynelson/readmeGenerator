@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown")
 
 inquirer
   .prompt([
@@ -61,15 +62,17 @@ inquirer
     // Use user feedback for... whatever!!
     console.log(answers)
     //creat readme file
+    const md = generateMarkdown(answers)
 
-    fs.writeFile("readme_render.md", null, function(err) {
-  
+    fs.writeFile("readme_render.md", md , function(err) {
+      
       if (err) {
         console.log("fail!");
         return console.log(err);
-
+  
       }
         console.log("Success!");
+
     });
 
   })
@@ -80,6 +83,7 @@ inquirer
 
     } else {
       // Something else when wrong
+      console.log(error)
       console.log("something else failed");
 
     }
