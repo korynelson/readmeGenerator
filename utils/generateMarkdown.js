@@ -49,12 +49,12 @@ This repository is licensed under the ${data.license} license
 ## Contributing
 ${data.guidelines}
 
-##Tests
+## Tests
 ${data.test}
 
 ## Questions
-For any questions about this repository send an email to ${data.email}
-View my full GitHub at [https://github.com/${data.name}](https://github.com/${data.name})
+#### For any questions about this repository send an email to ${data.email}
+#### View my full GitHub at [https://github.com/${data.name}](https://github.com/${data.name})
 
 
 `;

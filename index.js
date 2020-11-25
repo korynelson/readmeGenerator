@@ -17,7 +17,7 @@ inquirer
     },
     {
     type: "input",
-    name: "install instructions",
+    name: "installation",
     message: "Enter installation instructions."
     },
     {
