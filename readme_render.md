@@ -1,2 +1,2 @@
-# Kory Nelson
+# korynelson
     # README.md Generator
