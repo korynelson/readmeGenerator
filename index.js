@@ -59,23 +59,22 @@ inquirer
     
   ])
   .then(answers => {
-    // Use user feedback for... whatever!!
+    // Check the answers
     console.log(answers)
-    //creat readme file
-    const md = generateMarkdown(answers)
 
-    fs.writeFile("readme_render.md", md , function(err) {
+    //creat readme file
+    fs.writeFile("readme_render.md", generateMarkdown(answers) , function(err) {
       
+      // Catch errors with the writeFile if there are any
       if (err) {
         console.log("fail!");
         return console.log(err);
-  
       }
         console.log("Success!");
-
     });
 
   })
+  // Catch any errors with inquirer
   .catch(error => {
     if(error.isTtyError) {
       // Prompt couldn't be rendered in the current environment
@@ -85,6 +84,5 @@ inquirer
       // Something else when wrong
       console.log(error)
       console.log("something else failed");
-
     }
   });
